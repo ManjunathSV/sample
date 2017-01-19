@@ -1,0 +1,38 @@
+{
+  "name": "burberry-project-transparency",
+  "version": "1.0.0",
+  "description": "API and web-app for Project transparency",
+  "main": "index.js",
+  "scripts": {
+    "test": " node_modules/mocha/bin/_mocha --recursive -R spec -r node_modules/simock/lib/mock.js  -r node_modules/should/should.js  test/*",
+    "behavior_test": "node_modules/cucumber/bin/cucumber.js",
+    "test_coverage" : "node_modules/mocha/bin/mocha --recursive --reporter mochawesome -r node_modules/simock/lib/mock.js  -r node_modules/should/should.js  test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openly/burberry-project-transparency.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/openly/burberry-project-transparency/issues"
+  },
+  "homepage": "https://github.com/openly/burberry-project-transparency#readme",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "config": "^1.24.0",
+    "connect": "^3.5.0",
+    "fs": "0.0.1-security",
+    "mocha": "^3.2.0",
+    "mustache": "^2.3.0",
+    "restify": "^4.3.0",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "cucumber": "^2.0.0-rc.6",
+    "mocha": "^3.2.0",
+    "mochawesome": "^2.0.1",
+    "should": "^11.1.2",
+    "simock": "^0.1.1"
+  }
+}
